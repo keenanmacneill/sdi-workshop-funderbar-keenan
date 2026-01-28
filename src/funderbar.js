@@ -239,7 +239,7 @@
 
   _.objectCreationBracket = (a, b, c) => {
     //Code Goes Below
-
+    obj['a']
   }
 
   //Below you will be building a function that creates an object using dot notation (.). Within the function create and return an object.
