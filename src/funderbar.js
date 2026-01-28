@@ -94,25 +94,27 @@ _.mathOrder = function(test){
 //_.same takes two parameters and returns whether they are the equal or not
 _.same = function(a,b){
   //Code Goes Below
+  return a === b ? true : false
 
 }
 
 //_.greater takes two numbers as parameters and checks if a is greater than b
 _.greater = function(a,b){
   //Code Goes Below
-
+  return a > b ? true : false
 }
 
 //_.lessThan takes two numbers as parameters and checks if a is less than b
 _.lessThan = function(a,b){
   //Code Goes Below
+  return a < b
 
 }
 
 //_.falsyOrTruthy takes a parameter and determines whether it is TRUTHY or FALSY
 _.falsyOrTruthy = function(a){
    //Code Goes Below
-
+   return a ? true : false
 }
 
   //In the next tests you will be given four parameters to compare, sort of.
@@ -127,39 +129,42 @@ _.falsyOrTruthy = function(a){
   //_.andAnd will be using the && comparator
   _.andAnd = function(a,b,c,d) {
   //Code Goes Below
-
+  return (a && b) && (c && d) ? true : false
   }
 
     //_.orOr will be using the || comparator
     _.orOr = function(a,b,c,d) {
       //Code Goes Below
-
+      return (a || b) || (c || d) ? true : false
       }
 
   //Control Flow
   //Create a basic if statement to pass the tests.
   _.ifLogic = function(a, b){
     //Code Goes Below
-
+    return a === b ? 'Great' : undefined
   }
 
     //Create a basic if else statement to pass the tests.
     _.ifElseLogic = function(a, b){
       //Code Goes Below
-
+      return a === b ? 'Great' : 'Good'
     }
 
     //Using a for loop, iterate through the array passed.
     //Return the array as a single string.
     _.forLoop = function(a){
       //Code Goes Below
-
+      let result = ''
+      for(let elm of a){
+        result += elm
+      }
+      return result
     }
 
     //Using NESTED for loops, iterate through an array or arrays
     _.nestedForLoop = function(a){
       //Code Goes Below
-
     }
 
     //While looping through the array passed determine the data type of the element. If the element is a number add it to a variable. At the end return that variable.
