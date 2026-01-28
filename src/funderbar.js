@@ -259,7 +259,7 @@
 
   _.objectValue = (a, b) => {
     //Code Goes Below
-
+    return a[b]
   }
 
 
@@ -271,7 +271,13 @@
   //Loop through the given array and return the total sum of all the numbers in the array.
   _.forOf = (a) => {
     //Code Goes Below
-
+    let sum = 0
+    for(let elm of a){
+      if(typeof elm === 'number'){
+        sum += elm
+    }
+  }
+  return sum
   }
 
   //Loop through the given object and return an array of keys from the object.
@@ -279,13 +285,21 @@
   //example array.push(value)
   _.forInKeys = (a) => {
     //Code Goes Below
-
+    let result = [];
+    for(let key in a){
+      result.push(key)
+    }
+    return result
   }
 
   //Loop through the given object and return an array of values from the object.
   //This is similar to the above function but needs a little digging to get the value.
   _.forInValues = (a) => {
     //Code Goes Below
-
+    let result = [];
+    for(let key in a){
+      result.push(a[key])
+    }
+    return result
   }
 }());
